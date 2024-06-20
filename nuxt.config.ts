@@ -3,6 +3,14 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  content: {
+    navigation: {
+      fields: ['author', 'publishedAt'],
+    },
+    experimental: {
+      search: {},
+    },
+  },
   modules: [
     '@nuxt/content',
     (_options, nuxt) => {
@@ -14,6 +22,7 @@ export default defineNuxtConfig({
   ],
   routeRules: {
     '/': { prerender: true },
+    '/**': { prerender: true },
   },
   build: {
     transpile: ['vuetify'],
