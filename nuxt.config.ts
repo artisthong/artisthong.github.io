@@ -4,9 +4,7 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 export default defineNuxtConfig({
   devtools: { enabled: true },
   content: {
-    navigation: {
-      fields: ['author', 'publishedAt'],
-    },
+    documentDriven: true,
     experimental: {
       search: {},
     },
@@ -20,10 +18,16 @@ export default defineNuxtConfig({
       });
     },
   ],
-  routeRules: {
-    '/': { prerender: true },
-    '/**': { prerender: true },
+  nitro: {
+    preset: 'github-pages',
+    // prerender: { crawlLinks: true, routes: ['/about'] },
   },
+  // experimental: {
+  //   sharedPrerenderData: true,
+  // },
+  // routeRules: {
+  //   '/**': { prerender: true },
+  // },
   build: {
     transpile: ['vuetify'],
   },
@@ -34,4 +38,10 @@ export default defineNuxtConfig({
       },
     },
   },
+  // hooks: {
+  //   'prerender:routes'({ routes }) {
+  //     console.log(routes);
+  //     routes.clear(); // Do not generate any routes (except the defaults)
+  //   },
+  // },
 });
