@@ -123,20 +123,4 @@ watch(search, async (n, o) => {
 });
 </script>
 
-<style lang="scss" scoped>
-.v-overlay-container {
-  .v-list-item {
-    :deep(.v-list-item__content) {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  // :deep(.v-overlay__content) {
-  //   :deep(.v-list-item) {
-  //     display: block !important;
-  //     // flex-direction: column !important;
-  //   }
-  // }
-}
-</style>
+<style lang="scss" scoped></style>
