@@ -4,7 +4,7 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 export default defineNuxtConfig({
   devtools: { enabled: true },
   content: {
-    documentDriven: true,
+    // documentDriven: true,
     experimental: {
       search: {},
     },
