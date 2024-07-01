@@ -7,7 +7,7 @@
 
 1. [Nuxt3 스캐폴드로 프로젝트 생성](#nuxt3-스캐폴드로-프로젝트-생성)
 2. [Nuxt Content 모듈 추가](#nuxt-content-모듈-추가) 
-3. [Vuetify3 UI 프레임워크 설치](#nuxt-config-설정) 
+3. [Vuetify3 UI 프레임워크 설치](#vuetify3-설치) 
 
 ---
 ## Nuxt3 스캐폴드로 프로젝트 생성
