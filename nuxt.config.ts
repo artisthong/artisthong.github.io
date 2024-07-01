@@ -3,8 +3,23 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  css: ['github-markdown-css/github-markdown-dark.css'],
   content: {
+    markdown: {},
     // documentDriven: true,
+    highlight: {
+      // Theme used in all color schemes.
+      theme: 'github-dark',
+      // // OR
+      // theme: {
+      //   // Default theme (same as single string)
+      //   default: 'github-light',
+      //   // Theme used if `html.dark`
+      //   dark: 'github-dark',
+      //   // Theme used if `html.sepia`
+      //   sepia: 'monokai'
+      // }
+    },
     experimental: {
       search: {},
     },

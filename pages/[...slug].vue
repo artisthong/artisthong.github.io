@@ -2,7 +2,7 @@
   <!-- <div v-if="$route.path === '/'" style="height: calc(100vh - 64px); overflow: auto">Main</div> -->
   <div
     v-if="calcMergeNaviPath.filter(x => x.includes('/posts')).includes($route.path)"
-    style="height: calc(100vh - 64px); overflow: auto"
+    style="height: calc(100vh - 64px); overflow: auto; background-color: #0d1117"
   >
     <ContentList :path="$route.path" v-slot="{ list }">
       <v-row class="ma-0">
@@ -13,8 +13,8 @@
       </v-row>
     </ContentList>
   </div>
-  <div v-else style="height: calc(100vh - 64px); overflow: auto">
-    <ContentDoc />
+  <div v-else class="markdown-body" style="height: calc(100vh - 64px); overflow: auto">
+    <ContentDoc class="mx-2" />
   </div>
 </template>
 

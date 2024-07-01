@@ -20,6 +20,7 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-vue": "^9.22.0",
+    "github-markdown-css": "^5.6.1",
     "nuxt": "^3.11.1",
     "prettier": "^3.2.5",
     "vue": "^3.4.21",

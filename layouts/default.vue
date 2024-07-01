@@ -96,7 +96,7 @@
         </v-navigation-drawer>
         <!-- </ClientOnly> -->
 
-        <v-main style="background-color: #ddd">
+        <v-main>
           <!-- <div>items: {{ items }}</div> -->
           <NuxtPage />
         </v-main>
