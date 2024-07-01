@@ -5,9 +5,9 @@
 먼저, Markdown을 지원하는 CMS기반의 프레임워크나 라이브러리를 찾아보았는데, 최근 Nuxt3 프레임워크로 개발하고 있어서 관련 모듈이 있지 않을까 찾던중 역시나 Nuxt 재단에서 공식 지원하는 [Nuxt Content](https://content.nuxt.com/) 모듈을 찾았다.:+1:   
 그래서 소개문서와 간편 가이드들을 확인해보니 제가 구현하기 적합한 것 같아 해당 모듈로 개발을 진행했다.   
 
-1. Nuxt3 스캐폴드로 프로젝트 생성
-2. Nuxt Content 모듈 추가 
-3. Vuetify3 UI 프레임워크 설치 
+1. [Nuxt3 스캐폴드로 프로젝트 생성](#nuxt3-스캐폴드로-프로젝트-생성)
+2. [Nuxt Content 모듈 추가](#nuxt-content-모듈-추가) 
+3. [Vuetify3 UI 프레임워크 설치](#nuxt-config-설정) 
 
 ---
 ## Nuxt3 스캐폴드로 프로젝트 생성
@@ -15,7 +15,7 @@
 npx nuxi@latest init markdown-web
 ```
 ---
-## Nuxt Content 모듈 추가  
+## Nuxt Content 모듈 추가
 ```shell
 npx nuxi@latest module add content
 ```
